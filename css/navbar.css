@@ -1,0 +1,99 @@
+/* navbar styles */
+.navbar-container {
+  background: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  box-shadow: var(--box-shadow-light);
+  transform: var(--transition);
+}
+.navbar-container .navbar-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container .navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.navbar-container .hamburger {
+  width: 30px;
+}
+.navbar-container .navbar-left .logo-section .logo {
+  font-size: 45px;
+  text-transform: capitalize;
+  color: var(--clr-primary);
+}
+.navbar-container .navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-container .navbar-right .notification {
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  background: var(--clr-primary-light);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.navbar-container .navbar-right .text {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  border-radius: 50%;
+  color: var(--clr-white);
+}
+.navbar-container .navbar-right .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-container .navbar-right .profile .placeholder-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--clr-primary-light);
+  cursor: pointer;
+}
+.navbar-container .navbar-right .profile .name {
+  font-size: 20px;
+  color: var(--clr-black);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  cursor: text;
+}
+.navbar-container .navbar-right .profile .name::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--clr-black);
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}

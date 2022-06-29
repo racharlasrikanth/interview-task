@@ -1,0 +1,53 @@
+/* sidebar styles */
+.sidebar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+}
+.sidebar-container.show-sidebar {
+  display: block;
+}
+.sidebar-container .sidebar-center .sidebar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar-container li {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--clr-white);
+  box-shadow: var(--box-shadow-light);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.sidebar-container li:hover {
+  box-shadow: var(--box-shadow-dark);
+}
+.sidebar-container .each-link img {
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sidebar-container .each-link.bookmark img {
+  width: 20px;
+}
+.sidebar-container li.active {
+  background: var(--clr-primary);
+}
+.sidebar-container .each-link .text {
+  color: var(--clr-primary);
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: 10px;
+  display: block;
+}
+.sidebar-container .each-link.active .text {
+  color: var(--clr-white);
+}

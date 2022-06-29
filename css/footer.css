@@ -1,0 +1,15 @@
+/* footer styles */
+.footer-container {
+  width: 100%;
+  min-height: 70px;
+  background: var(--clr-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .copyright-text {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--clr-white);
+}
